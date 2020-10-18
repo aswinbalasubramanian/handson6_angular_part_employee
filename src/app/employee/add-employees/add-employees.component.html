@@ -1,0 +1,11 @@
+<div>
+    <form #form="ngForm" (ngSubmit)="submit(form)">
+        <label>Name</label><br/>
+        <input type="text" id="name" name="name" [(ngModel)]="emp.name" required><br/>
+        <label>Salary</label><br/>
+        <input type="number" id="salary" name="salary" [(ngModel)]="emp.salary" required><br/>
+        <label>Permanent</label><br/>
+        <input type="checkbox" id="permanent" name="permanent" [(ngModel)]="emp.permanent" required><br/>
+        <button type="submit">Submit</button>
+    </form>
+</div>
